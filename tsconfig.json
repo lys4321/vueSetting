@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "ESNext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+		"module": "ESNext" /* Specify what module code is generated. */,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": true,
+		"sourceMap": true,
+		"composite": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"strict": true,
+		"lib": ["ESNext", "DOM", "DOM.Iterable", "ESNext.Promise"],
+		"typeRoots": ["./node_modules/@types"],
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"exclude": ["node_modules", "dist"],
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vuetify from 'vite-plugin-vuetify';
-
-const path = import('path');
-
+import path from 'path'; // 정적 import로 변경
 export default defineConfig({
 	plugins: [
 		vue(),
@@ -11,6 +9,9 @@ export default defineConfig({
 			autoImport: true,
 		}),
 	],
+	server: {
+		port: 4444,
+	},
 	define: { 'process.env': {} },
 	resolve: {
 		alias: {
